@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name</title>
+    <style>
+        body{
+            background-color: rgb(213, 191, 131);
+            font: normal 30px Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var name = String(window.prompt('What is your name?'));
+        document.write(`Hello, ${name}, welcome to our website!<br/> your name have ${name.length} <br/>` )
+        document.write(`Your name in uppercase: ${name.toUpperCase()}<br/>`)
+        document.write(`Your name in lowercase: ${name.toLowerCase()}<br/>`)
+    </script>
+</body>
+</html>
