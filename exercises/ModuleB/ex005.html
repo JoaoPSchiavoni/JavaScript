@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        body{
+            background-color: rgb(213, 191, 131);
+            font: normal 30px Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var dollar = Number(window.prompt('How much money do you have?'));
+        var convert_to_brl = dollar * 5.50;
+        var convert_to_eur = dollar * 0.85;
+        var brl = convert_to_brl.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        var eur = convert_to_eur.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}) 
+
+        document.write(`You have $${dollar.toFixed(2)}<br/>`);
+        document.write('With this money you can buy:<br/>');
+        document.write(`<br/>`);
+        document.write(`You have ${brl} in real<br/>`);
+        document.write(`You have ${eur} in euro<br/>`);
+
+    </script>
+</body>
+</html>
