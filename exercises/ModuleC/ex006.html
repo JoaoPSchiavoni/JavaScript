@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearningDOM</title>
+    <Style>
+        body{
+            background-color: rgb(213, 191, 131);
+            font: normal 18px Arial, sans-serif;
+        }
+    </Style>
+</head>
+<body>
+
+    <h1>Learning DOM</h1>
+    <script>
+        var h1 = document.querySelector('h1');
+        h1.style.color = 'black';
+        h1.style.backgroundColor = color = 'rgb(0, 0, 0, 0.3)';
+        h1.style.border = '1px solid black';
+        h1.style.padding = '10px';
+        h1.style.textAlign = 'center';
+
+    
+    </script>
+    <p>Result</p>
+    <p>learning to use the <strong>DOM</strong> in JavaScript.</p>
+    
+    <div class = 'msg'>Click here</div>
+    
+    <script>
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[0]
+
+        /*
+        var d = window.document.getElementById('msg')
+        d.Style.background = 'green'
+        d.innerText = 'im wainting...'
+        */
+
+       var d = document.querySelector('div.msg')
+       d.style.background = 'green'
+       //d.innerText = 'im wainting...'
+
+    </script>
+</body>
+
+</html>
