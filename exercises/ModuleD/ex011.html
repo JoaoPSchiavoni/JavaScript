@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DetranDoMugas</title>
+    <style>
+                body {
+            background-color: rgb(213, 191, 131);
+            font: normal 20px Arial, sans-serif;
+        }
+        input {
+            font: normal 20px Arial, sans-serif;
+            width: 100px;
+            height: 30px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Confisco das Mulas</h1>
+    <input type="number" name="textn1" id="txtn1">
+    <input type="button" value="validar" onclick="multa()">
+    <div id="res">Resultado</div>
+    <script>
+        function multa(){
+            var tn1 = document.querySelector('input#txtn1')
+            var n1 = Number(tn1.value)
+            if (n1 > 60) {
+                res.innerHTML = `Ta MULTADO MARRECO! me PAGUE R$3000,00`
+            } else {
+                alert('A Mula ta liberada!')
+            }
+        }
+        res.innerHTML = `MULA`
+    </script>
+</body>
+</html>
